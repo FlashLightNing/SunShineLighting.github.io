@@ -1,0 +1,306 @@
+<html>
+<head>
+<title>秀</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--以上部为分jQueryMobile库引入和设定-->-->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script>
+</script>
+</head>
+<!--这其中为UI内容编写区 这是注解的格式 -->
+<body bgcolor="black">
+
+
+<div data-role="page" id="show" bgcolor="blue">
+	<div data-role="header">
+		<h1>秀出风采</h1>
+		<a href="#main" data-role="button" data-icon="search" class="ui-btn-right">登陆</a>
+	</div>
+
+	<div data-role="content">
+	</div>
+	
+	<div data-role="footer"   data-position="fixed">
+	
+	<div data-role="navbar" >
+		<ul>
+		<!--ui-btn-active:默认选中-->
+		<li><a href="#show" class="ui-btn-active" data-icon="home" >首页</a></li>
+		<li><a href="#pageintroduce" data-transition="slide" data-icon="star" >简介</a></li>
+		<li><a href="#register" data-transition="slide"  data-icon="grid" >加入我们</a></li>
+		</ul>
+		</div>
+</div>
+</div>
+
+<!--简介-->
+<div data-role="page" id="pageintroduce" bgcolor="blue">
+	<div data-role="header">
+		<h1>秀出风采</h1>
+		<a href="#main" data-role="button" data-icon="search" class="ui-btn-right">登陆</a>
+	</div>
+
+	<div data-role="content"><font size="4" face="楷体">
+	一个展示自我的平台，一个秀出个性的平台。
+	</font>
+	</div>
+	
+	<div data-role="footer"   data-position="fixed">
+	
+	<div data-role="navbar" >
+		<ul>
+		<!--ui-btn-active:默认选中-->
+		<li><a href="#show"  data-icon="home"  data-transition="slide" data-direction="reverse">首页</a></li>
+		<li><a href="#" data-transition="slide" data-icon="star"  >简介</a></li>
+		<li><a href="#register" data-transition="slide"  data-icon="grid" data-transition="slide"  >加入我们</a></li>
+		</ul>
+		</div>
+</div>
+</div>
+
+
+<!--注册，登陆-->
+
+<div data-role="page" id="register">
+	<div data-role="header">
+		<h1>秀出风采</h1>
+	</div>
+
+	<div data-role="content">
+		<form method="post" action="register.php">
+<!--标签、输入框-->
+<input type="text" placeHolder=" 姓名 " name="fname" id="fname" bgcolor="red">
+
+<textarea type="text" placeHolder=" 吐槽 " name="fname" id="fname"></textarea>
+<!--发送按钮 -->
+<a href="#main"  data-role="button" data-theme="b">注册</a>
+</form>
+	</div>
+	
+	<div data-role="footer"   data-position="fixed">
+</div>
+</div>
+
+<div data-role="page" id="main">
+	<div data-role="header" data-fullscreen="true">
+	<h1> <a href="#show"  data-icon="home">秀</a></h1> 
+</div>
+		<div data-role="navbar" data-theme="a">
+		<ul>
+		<!--ui-btn-active:默认选中-->
+		<li><a href="#main" class="ui-btn-active" data-icon="home">主页</a></li>
+		<li><a href="#introduce" data-transition="slide" >吐槽</a></li>
+		<li><a href="#honnor1" data-transition="slide" data-rel="dialog">荣誉</a></li>
+		<li><a href="#recently" data-transition="slide">近况</a></li>
+		<li><a href="#suggestion" data-transition="slide">建议</a></li>
+		</ul>
+		</div>
+	<div data-role="content">
+	<img src="newFolder/zhh.jpg" />
+</div>
+<div data-role="footer">
+<a href="#information" data-role="button" data-transition="fade" data-icon="info" data-theme="a" data-rel="dialog" >信息</a>
+</div>
+</div>
+
+<!-- information-->
+<div data-role="page" id="information">
+	<div data-role="header">
+	 <h1> 版本信息 </h1>
+	</div>
+	<div data-role="content">
+	<p>  1.0 版本信息</p>
+	</div>
+
+
+</div>
+
+<!--第二个页面-->
+
+<div data-role="page" id="introduce">
+<div data-role="header">
+<h1>秀</h1> 
+</div>
+	<div data-role="navbar" data-theme="a">
+		<ul>
+		<!--ui-btn-active:默认选中-->
+		<li><a href="#main"  data-icon="home"  data-transition="slide"   data-direction="reverse" >主页</a></li>
+		<li><a href="#introduce"   data-transition="slide"  class="ui-btn-active" >吐槽</a></li>
+		<li><a href="#honnor1" data-transition="slide" data-rel="dialog" >荣誉</a></li>
+		<li><a href="#recently" data-transition="slide">近况</a></li>
+		<li><a href="#suggestion" data-transition="slide">建议</a></li>
+		</ul>
+		</div>
+<div data-role="content">
+<div data-role="collapsible-set">
+<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u"  data-theme="b">
+<h1>男生</h1>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>朱辉辉</h1>
+		
+		<p> <font size="5" face=楷体"> 好玩不过嫂子，好吃不过饺子  ---朱辉辉</font></p>
+		<img src="newFolder/zhh.jpg">
+	</div>
+		<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>李博文</h1>
+		
+		<p><font size=5 face="楷体">让我来试试你这体重计够不够格！！   ---李博文 </font></p>	
+		<img src="newFolder/lbw.jpg">
+	</div>
+		
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>钟培雄</h1>
+		
+		<p> <font size=5 face="楷体">为什么别人都说我屁股大？？  ---钟培雄 </font></p>
+		<img src="newFolder/zpx.jpg">
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>冯喆</h1>
+		<p> <font size=5 face="楷体">为什么悲伤的总是我？？  ---冯喆</font></p>
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>高翔</h1>
+		<p> <font size=5 face="微软雅黑">high high shit  ---高翔</font></p>
+	</div>
+		
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>岳达</h1>
+		<p> <font size=5 face="微软雅黑">你这个傻 *  ---岳达</font></p>
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>张雷</h1>
+		<p> <font size=5 face="微软雅黑">我才是世界第一大** ---张雷</font></p>
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>廖望旻</h1>
+		<p> <font size=5 face="微软雅黑">我会弹吉他哟，带你飞 ---廖望旻</font></p>
+		<img src="newFolder/lwm.jpg">
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>朱广茂</h1>
+		<p> <font size=5 face="微软雅黑">其实最懂我的还是岳达 ---朱广茂</font></p>
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>黄均伟</h1>
+		<p> <font size=5 face="微软雅黑">如家 ---黄均伟</font></p>
+		<img src="newFolder/hjw.jpg">
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>卢鸣峰</h1>
+		<p> <font size=5 face="微软雅黑">哦  ---this</font></p>
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>肖冲冲</h1>
+		<p> <font size=5 face="微软雅黑">我一天12小时躺床上 ---肖冲冲</font></p>
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>张亚挺</h1>
+		<p><font size=5 face="微软雅黑"> 我一天24小时躺床上 ---张亚挺</font></p>
+	</div>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+		<h1>......</h1>
+		<p> <font size=5 face="微软雅黑">更多人物，尽在电子1203 </font></p>
+	</div>
+</div>
+
+	<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-theme="b">
+	<h1>女生</h1>
+	<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+			<h1>......</h1>
+			<p>敬请期待</p>	
+		</div>
+	</div>
+	<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-theme="b">
+	<h1>动物</h1>
+		<div data-role="collapsible"  data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+			<h1>钟英爽</h1>
+			<p><font size=5 face="微软雅黑">我是猥琐的小熊   ---钟英爽</font></p>	
+			<img src="newFolder/zys.jpg">
+		</div>
+	</div>
+</div>
+<a href="#main" data-role="button" data-transition="slide" data-inline="true"  data-theme="a"  data-direction="reverse" data-icon="back">返回</a>
+</div>
+<div data-role="footer" data-position="fixed">
+</div>
+</div>
+
+<!--  荣誉-->
+<div data-role="page" id="honnor1">
+	<div data-role="header">
+		<h1>班级荣誉展示</h1>
+	</div>
+	
+	<div data-role="content">
+	<p>敬请期待</p>
+		<a href="#main" data-role="button"  data-direction="reverse">返回</a>
+	<div data-role="footer"   data-position="fixed">
+</div>
+</div>
+</div>
+
+
+
+<!--班级近况-->
+<div data-role="page" id="recently">
+<div data-role="header">
+<h1>班级近况</h1>
+</div>
+
+	<div data-role="navbar" data-theme="a">
+		<ul>
+		<!--ui-btn-active:默认选中-->
+		<li><a href="#main"  data-icon="home"    data-transition="slide" data-direction="reverse">主页</a></li>
+		<li><a href="#introduce"  data-transition="slide"    data-direction="reverse">吐槽</a></li>
+		<li><a href="#honnor1"     data-transition="slide" data-rel="dialog" data-direction="reverse">荣誉</a></li>
+		<li><a href="#recently"   class="ui-btn-active" data-transition="slide">近况</a></li>
+		<li><a href="#suggestion" data-transition="slide">建议</a></li>
+		</ul>
+		</div>
+<div data-role="content">
+<p ><font size=4 face=楷体">尼玛都回家了，剩下没几个人了</font></p>
+<a href="#main" data-role="button" data-transition="fade" data-icon="back">返回</a>
+<div data-role="footer" data-position="fixed">
+</div>
+</div>
+</div>
+
+
+
+<!--建议-->
+
+<div data-role="page" id="suggestion">
+<div data-role="header">
+<h1>建议</h1>
+</div>
+	<div data-role="navbar" data-theme="a">
+		<ul>
+		<!--ui-btn-active:默认选中-->
+		<li><a href="#main"  data-icon="home" data-transition="slide" data-direction="reverse">主页</a></li>
+		<li><a href="#introduce"  data-transition="slide"  data-direction="reverse">吐槽</a></li>
+		<li><a href="#honnor1"     data-transition="slide" data-rel="dialog" data-direction="reverse">荣誉</a></li>
+		<li><a href="#recently"  data-transition="slide" data-direction="reverse" >近况</a></li>
+		<li><a href="#suggestion"    class="ui-btn-active" data-transition="slide">建议</a></li>
+		</ul>
+		</div>
+
+<div data-role="content">
+<p ><font size=5 face="楷体">欢迎大家提意见，建议</font></p>
+<p>QQ:812165449 </p>
+<a href="#main" data-role="button" data-transition="fade" data-icon="back">返回</a>
+<div data-role="footer" data-position="fixed">
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
